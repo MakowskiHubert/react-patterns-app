@@ -1,26 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vmin;
+  color: white;
+  font-size: 2rem;
+  padding: 2vmin;
+`;
+
+const Box = styled.div`
+  width: 25vmin;
+  height: 25vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 2vmin;
+  margin: auto;
+  
+  :hover {
+    filter: blur(2px) invert(50%);
+    cursor: pointer;
+  }
+`;
+
+const App = () => (
+	<Wrapper>
+		<Box>Other Pattern</Box>
+		<Box>Other Pattern</Box>
+		<Box>Other Pattern</Box>
+		<Box>Higher-order component</Box>
+		<Box>Render Props</Box>
+		<Box>Compound Components</Box>
+		<Box>Other Pattern</Box>
+		<Box>Other Pattern</Box>
+		<Box>Other Pattern</Box>
+	</Wrapper>
+);
 
 export default App;
