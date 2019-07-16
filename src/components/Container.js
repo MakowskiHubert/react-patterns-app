@@ -37,7 +37,7 @@ export default class Container extends Component {
 		return (
 			<Wrapper>
 				<Box to='/other'>Other Pattern</Box>
-				<Box to='/other'>Other Pattern</Box>
+				<Box to='/layout-component'>Layout Component</Box>
 				<Box to='/other'>Other Pattern</Box>
 				<Box to='/hoc'>Higher-order component</Box>
 				<Box to='/render-props'>Render Props</Box>
